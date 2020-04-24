@@ -1,0 +1,28 @@
+<!--Back button-->
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button>
+    </ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<!--Header-->
+<ion-content>
+    <h1>Recipe</h1>
+
+  <!--Search Button-->
+  <ion-input [(ngModel)]="searchName" placeholder="Enter recipe"><ion-icon name="search-outline"></ion-icon></ion-input>
+  <ion-button (click)="performSearch()">Search</ion-button>
+
+  <!-- Using ionic list to display information instead of list -->
+  <ion-list>
+    <ion-item *ngFor="let recip of Recipe">
+      <ion-label>
+        <h2>{{recip.title}}</h2>
+        <p>Ready in: {{recip.readyInMinutes}} Minutes</p>
+        <p>Servings for: {{recip.servings}}</p>
+        <p>Source:{{recip.sourceUrl}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

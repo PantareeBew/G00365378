@@ -1,31 +1,16 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+ion-button {
+  --color: white;
+  --background: #ff950a;
+}
+ion-content {
+  --background: url(../../assets/wall.jpg) no-repeat center/cover fixed;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+ion-input{
+  --background: white;
+  width: 300px;
+  --color:#e25c5c;
 }
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
-}
-
-ion-content ion-toolbar {
-  --background: translucent;
+ion-input{
+  --padding-bottom: 5px;
 }

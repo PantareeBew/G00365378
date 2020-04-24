@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button>
+    </ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--Header-->
+  <ion-content>
+    <h1>Location</h1>
+    <br>
+    <ion-button (click)="getLocation()">Get Location<ion-icon name="navigate-outline"></ion-icon></ion-button>
+    <p>Latitude : {{lat}}</p>
+    <p>Longitude : {{long}}</p>
+  </ion-content>
